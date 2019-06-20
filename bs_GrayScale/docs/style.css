@@ -1,0 +1,259 @@
+#mainNav {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.99);
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+}
+
+#mainNav .navbar-brand {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    color: #212529;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: #6c757d;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.75rem 0;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link:active {
+    color: #000;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #000 !important;
+}
+
+@media (min-width: 992px) {
+    #mainNav {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    #mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    #mainNav .navbar-brand:hover {
+        color: #fff;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        padding: 0 1rem;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link:hover {
+        color: #fff;
+    }
+
+    #mainNav .navbar-nav .nav-item:last-child .nav-link {
+        padding-right: 0;
+    }
+
+    #mainNav.navbar-scrolled {
+        -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+    }
+
+    #mainNav.navbar-scrolled .navbar-brand {
+        color: #212529;
+    }
+
+    #mainNav.navbar-scrolled .navbar-brand:hover {
+        color: #000;
+    }
+
+    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+        color: #212529;
+    }
+
+    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+        color: #000;
+    }
+}
+
+header.masthead {
+    background: linear-gradient(to bottom, rgba(80, 79, 79, 0.8) 0, rgba(175, 173, 172, 0.8) 100%), url(../img/bg.png);
+    background-size: cover;
+}
+
+header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+}
+
+.divider-black-50 {
+    width: 20%;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.divider-white-50 {
+    width: 20%;
+    border: 2px solid rgba(225, 225, 225, 0.5);
+}
+
+.btn {
+    border-radius: 2.25rem;
+    border: none;
+    padding: 1.25rem 2.25rem;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: var(--secondary);
+}
+
+.page-section {
+    padding: 8rem 0;
+}
+
+.text-black-50 {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+@media (min-width: 1200px) {
+    header.masthead h1 {
+        font-size: 3.5rem;
+    }
+}
+
+.img-fluid {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.img-fluid:hover {
+    filter: brightness(1.1);
+}
+
+.projects {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.projects:before,
+.projects:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+.projects .project {
+    width: 25%;
+    margin-bottom: 20px;
+    display: table;
+    float: left;
+    border-left: 20px solid transparent;
+    cursor: pointer;
+}
+
+.projects .project .avatar {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.projects .project .avatar img {
+    border: 24px solid #E5E5E5;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.projects .project.active .avatar img {
+    border-color: #323A45;
+}
+
+.projects .project .js-description {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+    .projects .project {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .projects .project {
+        width: 100%;
+        border-left: medium none;
+    }
+}
+
+.projects .js-dropdown {
+    background-clip: padding-box !important;
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    float: left;
+    padding: 0;
+    margin: 40px 0 20px;
+    width: 100%;
+    display: table;
+    border-color: transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 10px 20px;
+}
+
+.projects .js-dropdown:before,
+.projects .js-dropdown:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+@media screen and (max-width: 400px) {
+
+    .projects .js-dropdown {
+        border-left: medium none;
+    }
+}
+
+.projects .js-dropdown .js-dropdown-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 3px solid #323A45;
+    color: #333333;
+    position: relative;
+    width: 100%;
+    padding: 30px 25px 0;
+}
+
+.projects .js-dropdown .js-dropdown-content .js-dropdown-arrow {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -55px;
+    border: 35px solid transparent;
+    border-bottom-color: #6c757d;
+    pointer-events: none;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    transition: left 0.3s;
+}
+
+.projects .js-dropdown .js-dropdown-content p {
+    line-height: 26px;
+    margin: 0 0 40px;
+    padding: 0;
+    font-size: 16px;
+}
